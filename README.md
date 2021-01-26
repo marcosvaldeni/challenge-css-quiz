@@ -55,7 +55,7 @@ You will also see any lint errors in the console.
 
 # :bug: Issues
 
-Feel free to **file a new issue** with a respective title and description on the the [Challenge CSS Quiz](https://github.com/marcosvaldeni/Fintech-Design-with-React-Native/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/marcosvaldeni/Fintech-Design-with-React-Native/blob/master/CONTRIBUTING.md) to find out about the coding standards.
+Feel free to **file a new issue** with a respective title and description on the the [Challenge CSS Quiz](https://github.com/marcosvaldeni/challenge-css-quiz/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/marcosvaldeni/challenge-css-quiz/blob/master/CONTRIBUTING.md) to find out about the coding standards.
 
 # :tada: Contributing
 
