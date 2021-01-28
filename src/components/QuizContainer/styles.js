@@ -104,13 +104,6 @@ export const QuizBackground = styled.div`
 `;
 
 export const Form = styled.form`
-  input {
-    width: 100%;
-    height: 35px;
-    padding: 0 10px;
-    margin-bottom: 15px;
-  }
-
   button {
     width: 100%;
     height: 35px;

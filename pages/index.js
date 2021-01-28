@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import db from '../db.json';
-import { QuizContainer, Form } from '../src/components/Home/styles';
+import { QuizContainer, Form } from '../src/components/QuizContainer/styles';
 import { 
   Widget,
   Header,
@@ -13,13 +13,15 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
 
 export default function Home() {
   const router = useRouter();
   let [name, setName] = useState('');
 
   const onChangeHandler = (e) => {
-    setName(name = e.target.value);
+    setName(e.target.value);
+    console.log(e.target.value);
   }
   const onSubmitHandler = (e) => {
     e.preventDefault();
@@ -29,7 +31,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Challenge CSS Quiz</title>
+        <title>{db.title}</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"></link>
       </Head>
@@ -42,9 +44,11 @@ export default function Home() {
           <Content>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <Form onSubmit={onSubmitHandler}>
-              <input 
-                placeholder="informe seu nome" 
+              <Input 
+                name="name"
+                placeholder="Enter your name"
                 onChange={onChangeHandler}
+                value={name}
               />
               <button 
                 type="submit"
